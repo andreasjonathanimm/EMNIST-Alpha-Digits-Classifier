@@ -8,7 +8,7 @@ import io
 class EMNISTApp:
     def __init__(self, master):
         self.master = master
-        self.master.title("EMNIST Character Recognition")
+        self.master.title("Klasifikasi Karakter EMNIST")
 
         self.canvas_width = 280
         self.canvas_height = 280
@@ -21,7 +21,7 @@ class EMNISTApp:
 
         self.canvas.bind("<B1-Motion>", self.paint)
 
-        self.predict_button = tk.Button(self.master, text="Predict", command=self.predict)
+        self.predict_button = tk.Button(self.master, text="Prediksi", command=self.predict)
         self.predict_button.pack(side=tk.LEFT)
 
         self.reset_button = tk.Button(self.master, text="Reset", command=self.reset)
@@ -57,8 +57,8 @@ class EMNISTApp:
             45: "r", 46: "t"
         }
 
-        predicted_char = maps.get(predicted_char, "Unknown")
-        messagebox.showinfo("Prediction", f"Predicted Character: {predicted_char}")
+        predicted_char = maps.get(predicted_char, "???")
+        messagebox.showinfo("Prediksi", f"Karakter yang Diprediksi: {predicted_char}")
 
     def reset(self):
         self.canvas.delete("all")
