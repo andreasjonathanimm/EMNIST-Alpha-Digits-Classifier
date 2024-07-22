@@ -1,2 +1,2 @@
-# EMNIST-Alpha-Digits-Classifier
-Consists of Notebook and Python Script to create a canvas and input the canvas for the classifier to predict.
+# Klasifikasi Karakter Alfabet dan Angka EMNIST
+Berisi Notebook dan skrip Python untuk membuat kanvas dan memasukkannya untuk prediksi modelnya.
